@@ -78,6 +78,15 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     // MARK: -- UITableViewDelegate
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let string = dataArray[indexPath.row]
+        let controller = VCSTRING_TO_VIEWCONTROLLER(string)
+        if let controller = controller {
+            navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
     // MARK: - 响应事件
     
     // MARK: - 动画

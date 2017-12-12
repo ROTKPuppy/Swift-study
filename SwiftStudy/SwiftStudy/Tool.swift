@@ -33,3 +33,18 @@ func VCSTRING_TO_VIEWCONTROLLER(_ childControllerName: String) -> UIViewControll
     
     return childController
 }
+
+/// 获取TabBar高度
+///
+/// - Returns: TabBar高度
+func TABBAR_HEIGHT() -> CGFloat {
+    let tabBarController = UIApplication.shared.keyWindow?.rootViewController as! UITabBarController
+    return tabBarController.tabBar.bounds.size.height
+}
+
+/// 获取navigationBar高度
+///
+/// - Returns: navigationBar高度
+func NAVIGATIONBAR_HEIGHT() -> CGFloat {
+    return 64.0
+}

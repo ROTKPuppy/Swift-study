@@ -100,6 +100,9 @@ class FirstViewController: UIViewController {
     /// 配置UI
     private func setupUI() -> () {
         
+        /// 界面样式
+        view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
         /// 创建控件
         view.addSubview(startButton)
         view.addSubview(pauseButton)
@@ -108,9 +111,10 @@ class FirstViewController: UIViewController {
         
         /// 布局控件
         startButton.snp.makeConstraints { (make) in
-            make.left.bottom.equalTo(view)
+            make.left.equalTo(view)
             make.right.equalTo(pauseButton.snp.left)
-            make.height.equalTo(view).multipliedBy(0.6)
+            make.height.equalTo(view).multipliedBy(0.6).offset(-TABBAR_HEIGHT()-NAVIGATIONBAR_HEIGHT())
+            make.bottom.equalTo(view).offset(-TABBAR_HEIGHT())
         }
         
         pauseButton.snp.makeConstraints { (make) in
@@ -120,7 +124,7 @@ class FirstViewController: UIViewController {
         
         resetButton.snp.makeConstraints { (make) in
             make.right.equalTo(view).offset(-14)
-            make.top.equalTo(view).offset(30)
+            make.top.equalTo(view).offset(30+NAVIGATIONBAR_HEIGHT())
             make.width.equalTo(68)
         }
         
