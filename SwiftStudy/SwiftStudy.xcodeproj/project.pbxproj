@@ -16,6 +16,7 @@
 		078B36231FDFA04F00A74BC3 /* SwiftStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B36221FDFA04F00A74BC3 /* SwiftStudyUITests.swift */; };
 		078B36311FDFA26400A74BC3 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B36301FDFA26400A74BC3 /* TabBarController.swift */; };
 		078B36331FDFA3F000A74BC3 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B36321FDFA3F000A74BC3 /* ListViewController.swift */; };
+		078B36371FDFABD100A74BC3 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B36361FDFABD100A74BC3 /* Tool.swift */; };
 		18B71C429B08C4FCFB282272 /* Pods_SwiftStudyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367EEB790FEB9E3697CDE60C /* Pods_SwiftStudyUITests.framework */; };
 		EE05D25A50CECC7778E51C88 /* Pods_SwiftStudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AB9DFF05663317443D5983 /* Pods_SwiftStudyTests.framework */; };
 		FA74C6C700594B106A703079 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A131396D866337F1FA3B1E8D /* Pods_SwiftStudy.framework */; };
@@ -54,6 +55,7 @@
 		078B36241FDFA04F00A74BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		078B36301FDFA26400A74BC3 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		078B36321FDFA3F000A74BC3 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		078B36361FDFABD100A74BC3 /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		08AB9DFF05663317443D5983 /* Pods_SwiftStudyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		367EEB790FEB9E3697CDE60C /* Pods_SwiftStudyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		463A98F540666C38C7F5407C /* Pods-SwiftStudyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudyTests/Pods-SwiftStudyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				078B360E1FDFA04F00A74BC3 /* Info.plist */,
 				078B36301FDFA26400A74BC3 /* TabBarController.swift */,
 				078B36321FDFA3F000A74BC3 /* ListViewController.swift */,
+				078B36361FDFABD100A74BC3 /* Tool.swift */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				078B36311FDFA26400A74BC3 /* TabBarController.swift in Sources */,
 				078B36051FDFA04F00A74BC3 /* ViewController.swift in Sources */,
 				078B36331FDFA3F000A74BC3 /* ListViewController.swift in Sources */,
+				078B36371FDFABD100A74BC3 /* Tool.swift in Sources */,
 				078B36031FDFA04F00A74BC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
