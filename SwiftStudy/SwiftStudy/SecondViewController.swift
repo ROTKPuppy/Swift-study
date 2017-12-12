@@ -84,6 +84,9 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     
     private func setupUI() -> () {
         
+        // 界面配置
+        view.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        
         // 添加控件
         view.addSubview(tableView)
         view.addSubview(changeButton)
