@@ -98,7 +98,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         
         changeButton.snp.makeConstraints { (make) in
             make.size.equalTo(CGSize(width: 110, height: 110))
-            make.bottom.equalTo(view).offset(-38-TABBAR_HEIGHT())
+            make.bottom.equalTo(view).offset(-38)
             make.centerX.equalTo(view)
             make.top.equalTo(tableView.snp.bottom).offset(71)
         }
