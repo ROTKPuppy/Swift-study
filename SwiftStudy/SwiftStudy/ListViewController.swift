@@ -22,7 +22,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     /// 数据源
     lazy var dataArray: [String] = {
-        let array = ["FirstViewController"]
+        let array = ["FirstViewController",
+                     "SecondViewController"]
         return array
     }()
     
