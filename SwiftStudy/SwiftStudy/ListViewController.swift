@@ -22,7 +22,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     /// 数据源
     lazy var dataArray: [String] = {
-        let array = ["", "", ""]
+        let array = ["FirstViewController"]
         return array
     }()
     
