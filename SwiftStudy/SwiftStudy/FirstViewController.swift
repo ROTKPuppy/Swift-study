@@ -118,8 +118,8 @@ class FirstViewController: UIViewController {
         startButton.snp.makeConstraints { (make) in
             make.left.equalTo(view)
             make.right.equalTo(pauseButton.snp.left)
-            make.height.equalTo(view).multipliedBy(0.6).offset(-TABBAR_HEIGHT()-NAVIGATIONBAR_HEIGHT())
-            make.bottom.equalTo(view).offset(-TABBAR_HEIGHT())
+            make.height.equalTo(view).multipliedBy(0.6).offset(-NAVIGATIONBAR_HEIGHT())
+            make.bottom.equalTo(view)
         }
         
         pauseButton.snp.makeConstraints { (make) in
