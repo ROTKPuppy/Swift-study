@@ -85,7 +85,9 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let controller = VCSTRING_TO_VIEWCONTROLLER(string)
         controller?.title = string
         if let controller = controller {
+            controller.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(controller, animated: true)
+            controller.hidesBottomBarWhenPushed = false
         }
     }
     
