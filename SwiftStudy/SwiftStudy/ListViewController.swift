@@ -82,6 +82,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let string = dataArray[indexPath.row]
         let controller = VCSTRING_TO_VIEWCONTROLLER(string)
+        controller?.title = string
         if let controller = controller {
             navigationController?.pushViewController(controller, animated: true)
         }
