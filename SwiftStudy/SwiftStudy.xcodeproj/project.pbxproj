@@ -22,6 +22,7 @@
 		078B363C1FDFBF9A00A74BC3 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B363B1FDFBF9A00A74BC3 /* ThirdViewController.swift */; };
 		078B363E1FDFBFAA00A74BC3 /* ThirdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B363D1FDFBFAA00A74BC3 /* ThirdTableViewCell.swift */; };
 		078B36401FDFBFB600A74BC3 /* ThirdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B363F1FDFBFB600A74BC3 /* ThirdModel.swift */; };
+		078B36431FDFCD9000A74BC3 /* emoji zone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 078B36421FDFCD8F00A74BC3 /* emoji zone.mp4 */; };
 		18B71C429B08C4FCFB282272 /* Pods_SwiftStudyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367EEB790FEB9E3697CDE60C /* Pods_SwiftStudyUITests.framework */; };
 		EE05D25A50CECC7778E51C88 /* Pods_SwiftStudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AB9DFF05663317443D5983 /* Pods_SwiftStudyTests.framework */; };
 		FA74C6C700594B106A703079 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A131396D866337F1FA3B1E8D /* Pods_SwiftStudy.framework */; };
@@ -66,6 +67,7 @@
 		078B363B1FDFBF9A00A74BC3 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		078B363D1FDFBFAA00A74BC3 /* ThirdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableViewCell.swift; sourceTree = "<group>"; };
 		078B363F1FDFBFB600A74BC3 /* ThirdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdModel.swift; sourceTree = "<group>"; };
+		078B36421FDFCD8F00A74BC3 /* emoji zone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emoji zone.mp4"; sourceTree = "<group>"; };
 		08AB9DFF05663317443D5983 /* Pods_SwiftStudyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		367EEB790FEB9E3697CDE60C /* Pods_SwiftStudyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		463A98F540666C38C7F5407C /* Pods-SwiftStudyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudyTests/Pods-SwiftStudyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -180,11 +182,20 @@
 		078B363A1FDFBF8B00A74BC3 /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				078B36411FDFCD8F00A74BC3 /* Resource */,
 				078B363B1FDFBF9A00A74BC3 /* ThirdViewController.swift */,
 				078B363D1FDFBFAA00A74BC3 /* ThirdTableViewCell.swift */,
 				078B363F1FDFBFB600A74BC3 /* ThirdModel.swift */,
 			);
 			path = Third;
+			sourceTree = "<group>";
+		};
+		078B36411FDFCD8F00A74BC3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				078B36421FDFCD8F00A74BC3 /* emoji zone.mp4 */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		D6A341F0001F42455D5D50CB /* Frameworks */ = {
@@ -314,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				078B360D1FDFA04F00A74BC3 /* LaunchScreen.storyboard in Resources */,
+				078B36431FDFCD9000A74BC3 /* emoji zone.mp4 in Resources */,
 				078B360A1FDFA04F00A74BC3 /* Assets.xcassets in Resources */,
 				078B36081FDFA04F00A74BC3 /* Main.storyboard in Resources */,
 			);
