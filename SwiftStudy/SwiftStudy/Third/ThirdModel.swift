@@ -26,6 +26,7 @@ class ThirdModel: NSObject {
     /// 当前视频播放类型
     var videoType = VideoType.VideoDefault
     var video: Video
+    var indexPath: IndexPath?
     
     required init(image: String, title: String, source: String) {
         video = Video(image: image, title: title, source: source)

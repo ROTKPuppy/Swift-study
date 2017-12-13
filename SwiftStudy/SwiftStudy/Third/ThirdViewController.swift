@@ -15,6 +15,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     var playViewController = AVPlayerViewController()
     var playerView = AVPlayer()
+    var currentPlayCell: ThirdTableViewCell?
     
     /// 数据源
     let data = [
@@ -127,10 +128,9 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ThirdTableViewCellReId,
                                                  for: indexPath) as! ThirdTableViewCell
-        let model = data[indexPath.row]
-        cell.videoScreenshot.image = UIImage.init(named: model.video.image)
-        cell.videoTitleLabel.text = model.video.title
-        cell.videoSourceLabel.text = model.video.source
+        let model = data[indexPath.row] as ThirdModel
+        model.indexPath = indexPath
+        cell.setModel(model: model)
         cell.delegate = self
         return cell
     }
@@ -139,6 +139,20 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if !decelerate {
+            
+            // 寻找中心cell
+            playVideo()
+        }
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
+        // 寻找中心cell
+        playVideo()
     }
     
     // MARK: - 响应事件
@@ -154,5 +168,53 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
         present(playViewController, animated: true) { [unowned self] in
             self.playerView.play()
         }
+    }
+}
+
+extension ThirdViewController {
+    
+    private func handelCenterCell() -> ThirdTableViewCell {
+        
+        // 获取屏幕中间cell
+        let array = tableView.visibleCells as! [ThirdTableViewCell]
+        
+        var currentCell: ThirdTableViewCell?
+        var value = INT_MAX
+        
+        for cell in array {
+            
+            // 转换坐标
+            let cellRect = cell.superview!.convert(cell.frame, to: view)
+            debugPrint(cell.convert(cell.frame, to: view))
+            
+            // 判断最靠近屏幕中心的cell
+            let difference = abs(Int32(view.frame.size.height * 0.5 - (cellRect.origin.y + cellRect.size.height * 0.5)))
+            if value > difference {
+                currentCell = cell
+                value = difference
+            }
+        }
+        
+        return currentCell!
+    }
+    
+    private func playVideo() -> () {
+        
+        let path = Bundle.main.path(forResource: "emoji zone", ofType: "mp4")
+        let url = URL.init(fileURLWithPath: path!)
+        // 通知cell播放视频
+        let cell = handelCenterCell()
+        if let currentCell = currentPlayCell {
+            let cellInexPath = tableView.indexPath(for: cell)
+            let currentIndexPath = tableView.indexPath(for: currentCell)
+            if cellInexPath?.section == currentIndexPath?.section
+            && cellInexPath?.row == currentIndexPath?.row {
+                return
+            }
+        }
+        
+        cell.play(url: url)
+        currentPlayCell?.stop(animated: false)
+        currentPlayCell = cell
     }
 }
