@@ -39,7 +39,7 @@ extension TabBarController {
     
     func setupViewControllers() -> () {
         
-        let viewController = ThirdViewController()
+        let viewController = CenterViewController()
         let navigationController = UINavigationController(rootViewController: viewController)
         navigationController.title = "开发中"
         addChildViewController(navigationController)

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075516FF1FE220E300618E8E /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075516FE1FE220E300618E8E /* LeftViewController.swift */; };
+		075517011FE220EA00618E8E /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075517001FE220EA00618E8E /* RightViewController.swift */; };
+		075517031FE220F400618E8E /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075517021FE220F400618E8E /* CenterViewController.swift */; };
+		075517051FE2214000618E8E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075517041FE2214000618E8E /* CameraViewController.swift */; };
 		078B36031FDFA04F00A74BC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B36021FDFA04F00A74BC3 /* AppDelegate.swift */; };
 		078B36051FDFA04F00A74BC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B36041FDFA04F00A74BC3 /* ViewController.swift */; };
 		078B36081FDFA04F00A74BC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078B36061FDFA04F00A74BC3 /* Main.storyboard */; };
@@ -46,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		075516FE1FE220E300618E8E /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		075517001FE220EA00618E8E /* RightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
+		075517021FE220F400618E8E /* CenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
+		075517041FE2214000618E8E /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		078B35FF1FDFA04F00A74BC3 /* SwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		078B36021FDFA04F00A74BC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		078B36041FDFA04F00A74BC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +128,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		075516FD1FE2204D00618E8E /* Fourth */ = {
+			isa = PBXGroup;
+			children = (
+				075516FE1FE220E300618E8E /* LeftViewController.swift */,
+				075517001FE220EA00618E8E /* RightViewController.swift */,
+				075517021FE220F400618E8E /* CenterViewController.swift */,
+				075517041FE2214000618E8E /* CameraViewController.swift */,
+			);
+			path = Fourth;
+			sourceTree = "<group>";
+		};
 		078B35F61FDFA04F00A74BC3 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +164,7 @@
 		078B36011FDFA04F00A74BC3 /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				075516FD1FE2204D00618E8E /* Fourth */,
 				078B363A1FDFBF8B00A74BC3 /* Third */,
 				078B36021FDFA04F00A74BC3 /* AppDelegate.swift */,
 				078B36041FDFA04F00A74BC3 /* ViewController.swift */,
@@ -502,14 +522,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075517031FE220F400618E8E /* CenterViewController.swift in Sources */,
 				078B36351FDFAA7700A74BC3 /* FirstViewController.swift in Sources */,
 				078B36401FDFBFB600A74BC3 /* ThirdModel.swift in Sources */,
 				078B36311FDFA26400A74BC3 /* TabBarController.swift in Sources */,
 				078B36051FDFA04F00A74BC3 /* ViewController.swift in Sources */,
 				078B36331FDFA3F000A74BC3 /* ListViewController.swift in Sources */,
+				075517011FE220EA00618E8E /* RightViewController.swift in Sources */,
+				075516FF1FE220E300618E8E /* LeftViewController.swift in Sources */,
 				078B36391FDFB41600A74BC3 /* SecondViewController.swift in Sources */,
 				078B363E1FDFBFAA00A74BC3 /* ThirdTableViewCell.swift in Sources */,
 				078B36371FDFABD100A74BC3 /* Tool.swift in Sources */,
+				075517051FE2214000618E8E /* CameraViewController.swift in Sources */,
 				078B363C1FDFBF9A00A74BC3 /* ThirdViewController.swift in Sources */,
 				078B36031FDFA04F00A74BC3 /* AppDelegate.swift in Sources */,
 			);
