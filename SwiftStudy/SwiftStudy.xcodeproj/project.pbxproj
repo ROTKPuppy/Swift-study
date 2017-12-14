@@ -27,6 +27,7 @@
 		078B363E1FDFBFAA00A74BC3 /* ThirdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B363D1FDFBFAA00A74BC3 /* ThirdTableViewCell.swift */; };
 		078B36401FDFBFB600A74BC3 /* ThirdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B363F1FDFBFB600A74BC3 /* ThirdModel.swift */; };
 		078B36431FDFCD9000A74BC3 /* emoji zone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 078B36421FDFCD8F00A74BC3 /* emoji zone.mp4 */; };
+		07BC26FB1FE276C100D5B535 /* CapturePhotoOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BC26FA1FE276C100D5B535 /* CapturePhotoOutput.swift */; };
 		18B71C429B08C4FCFB282272 /* Pods_SwiftStudyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367EEB790FEB9E3697CDE60C /* Pods_SwiftStudyUITests.framework */; };
 		EE05D25A50CECC7778E51C88 /* Pods_SwiftStudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AB9DFF05663317443D5983 /* Pods_SwiftStudyTests.framework */; };
 		FA74C6C700594B106A703079 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A131396D866337F1FA3B1E8D /* Pods_SwiftStudy.framework */; };
@@ -76,6 +77,7 @@
 		078B363D1FDFBFAA00A74BC3 /* ThirdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableViewCell.swift; sourceTree = "<group>"; };
 		078B363F1FDFBFB600A74BC3 /* ThirdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdModel.swift; sourceTree = "<group>"; };
 		078B36421FDFCD8F00A74BC3 /* emoji zone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emoji zone.mp4"; sourceTree = "<group>"; };
+		07BC26FA1FE276C100D5B535 /* CapturePhotoOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePhotoOutput.swift; sourceTree = "<group>"; };
 		08AB9DFF05663317443D5983 /* Pods_SwiftStudyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		367EEB790FEB9E3697CDE60C /* Pods_SwiftStudyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		463A98F540666C38C7F5407C /* Pods-SwiftStudyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudyTests/Pods-SwiftStudyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				075517001FE220EA00618E8E /* RightViewController.swift */,
 				075517021FE220F400618E8E /* CenterViewController.swift */,
 				075517041FE2214000618E8E /* CameraViewController.swift */,
+				07BC26FA1FE276C100D5B535 /* CapturePhotoOutput.swift */,
 			);
 			path = Fourth;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 				075517031FE220F400618E8E /* CenterViewController.swift in Sources */,
 				078B36351FDFAA7700A74BC3 /* FirstViewController.swift in Sources */,
 				078B36401FDFBFB600A74BC3 /* ThirdModel.swift in Sources */,
+				07BC26FB1FE276C100D5B535 /* CapturePhotoOutput.swift in Sources */,
 				078B36311FDFA26400A74BC3 /* TabBarController.swift in Sources */,
 				078B36051FDFA04F00A74BC3 /* ViewController.swift in Sources */,
 				078B36331FDFA3F000A74BC3 /* ListViewController.swift in Sources */,
